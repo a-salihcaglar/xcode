@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="manzara1" translatesAutoresizingMaskIntoConstraints="NO" id="HwJ-nR-byF">
+                                <rect key="frame" x="45" y="99" width="325" height="403"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Manzara 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBY-PB-oF5">
+                                <rect key="frame" x="76" y="510" width="263" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="xBE-Eb-xuZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HwJ-nR-byF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="4RT-57-XdT"/>
+                            <constraint firstItem="HwJ-nR-byF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aja-2M-C4b"/>
+                            <constraint firstItem="HwJ-nR-byF" firstAttribute="centerX" secondItem="LBY-PB-oF5" secondAttribute="centerX" id="bZK-Cy-Vfm"/>
+                            <constraint firstItem="LBY-PB-oF5" firstAttribute="top" secondItem="HwJ-nR-byF" secondAttribute="bottom" constant="8" id="fKW-2c-L9u"/>
+                            <constraint firstItem="HwJ-nR-byF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="nlG-FE-xS9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LBY-PB-oF5" secondAttribute="bottom" constant="247" id="tBE-EK-jeL"/>
+                            <constraint firstItem="LBY-PB-oF5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="uEG-Xz-usb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="HwJ-nR-byF" id="Om0-iu-J6O"/>
+                        <outlet property="myLabel" destination="LBY-PB-oF5" id="CyQ-JG-Rrk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="manzara1" width="596" height="380"/>
+    </resources>
+</document>
