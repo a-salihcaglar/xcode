@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BirthdayNoteTaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ad:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iHF-Gv-DKQ">
+                                <rect key="frame" x="69" y="107" width="276" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="yZJ-Ar-6N5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Doğum Günü:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pJh-Op-C0z">
+                                <rect key="frame" x="69" y="172" width="276" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="HIx-zc-ESI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKU-1p-Yxy">
+                                <rect key="frame" x="86" y="260" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Igh-jV-k9W"/>
+                                    <constraint firstAttribute="width" constant="75" id="qRn-41-KBC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Kaydet"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ynT-lp-DWR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feI-oY-E3i">
+                                <rect key="frame" x="86" y="303" width="242" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="CnM-hd-Bls"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doğum Günü:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="us0-8l-dlr">
+                                <rect key="frame" x="86" y="357" width="242" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhb-W8-upw">
+                                <rect key="frame" x="253" y="260" width="75" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sil"/>
+                                <connections>
+                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eW5-CF-LsY"/>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bT-S4-U0E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="us0-8l-dlr" firstAttribute="top" secondItem="feI-oY-E3i" secondAttribute="bottom" constant="8" id="1Yj-kX-6hO"/>
+                            <constraint firstItem="iHF-Gv-DKQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="28x-OD-a0Q"/>
+                            <constraint firstItem="dKU-1p-Yxy" firstAttribute="top" secondItem="pJh-Op-C0z" secondAttribute="bottom" constant="54" id="3Bv-td-MKB"/>
+                            <constraint firstItem="iHF-Gv-DKQ" firstAttribute="leading" secondItem="pJh-Op-C0z" secondAttribute="leading" id="3Tp-Wc-wjI"/>
+                            <constraint firstItem="dKU-1p-Yxy" firstAttribute="top" secondItem="Hhb-W8-upw" secondAttribute="top" id="3yc-hv-09I"/>
+                            <constraint firstItem="dKU-1p-Yxy" firstAttribute="leading" secondItem="feI-oY-E3i" secondAttribute="leading" id="41I-kp-gHT"/>
+                            <constraint firstItem="Hhb-W8-upw" firstAttribute="leading" secondItem="dKU-1p-Yxy" secondAttribute="trailing" constant="92" id="4YJ-iZ-Jor"/>
+                            <constraint firstItem="pJh-Op-C0z" firstAttribute="top" secondItem="iHF-Gv-DKQ" secondAttribute="bottom" constant="31" id="4ee-dT-jXt"/>
+                            <constraint firstItem="feI-oY-E3i" firstAttribute="top" secondItem="dKU-1p-Yxy" secondAttribute="bottom" constant="8" id="5zc-vy-J0d"/>
+                            <constraint firstItem="feI-oY-E3i" firstAttribute="trailing" secondItem="us0-8l-dlr" secondAttribute="trailing" id="A7O-MY-uPb"/>
+                            <constraint firstItem="Hhb-W8-upw" firstAttribute="trailing" secondItem="feI-oY-E3i" secondAttribute="trailing" id="JHR-If-N8j"/>
+                            <constraint firstItem="iHF-Gv-DKQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JVG-3m-6jJ"/>
+                            <constraint firstItem="Hhb-W8-upw" firstAttribute="baseline" secondItem="dKU-1p-Yxy" secondAttribute="firstBaseline" id="Kex-jm-fa1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="us0-8l-dlr" secondAttribute="bottom" constant="459" id="Rms-Ny-oOP"/>
+                            <constraint firstItem="dKU-1p-Yxy" firstAttribute="baseline" secondItem="Hhb-W8-upw" secondAttribute="firstBaseline" id="V61-nd-oc3"/>
+                            <constraint firstItem="pJh-Op-C0z" firstAttribute="centerX" secondItem="feI-oY-E3i" secondAttribute="centerX" id="b8r-Fs-4ZW"/>
+                            <constraint firstItem="dKU-1p-Yxy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="dij-xW-YQd"/>
+                            <constraint firstItem="iHF-Gv-DKQ" firstAttribute="trailing" secondItem="pJh-Op-C0z" secondAttribute="trailing" id="gai-9T-m6I"/>
+                            <constraint firstItem="feI-oY-E3i" firstAttribute="leading" secondItem="us0-8l-dlr" secondAttribute="leading" id="lRc-1A-aL2"/>
+                            <constraint firstItem="iHF-Gv-DKQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="vwc-9I-m48"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="birthdayLabel" destination="us0-8l-dlr" id="D0G-k2-e04"/>
+                        <outlet property="birthdayTextField" destination="pJh-Op-C0z" id="Z1F-vp-afF"/>
+                        <outlet property="nameLabel" destination="feI-oY-E3i" id="PBH-b5-2Z2"/>
+                        <outlet property="nameTextField" destination="iHF-Gv-DKQ" id="Flh-LM-tiQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+</document>
